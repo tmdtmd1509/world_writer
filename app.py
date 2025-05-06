@@ -52,7 +52,7 @@ st.subheader("🗺️ 지역 정보 추가")
 with st.form(key="add_location_form"):
     loc_name = st.text_input("지역 이름")
     loc_desc = st.text_area("지역 설명", height=80)
-    loc_history = st.text_area("지역 역사/사건", height=60)
+    loc_history = st.text_area("지역 역사,사건", height=70)
     if st.form_submit_button("지역 추가"):
         st.session_state.locations.append({
             "name": loc_name,
